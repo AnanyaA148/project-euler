@@ -1,15 +1,15 @@
 import math
 
-lst = [2]
+lst = [2,3]
 check = 1
 num = 2
-count = 1
+count = 2
 while (count < 10001):
     prime = False
     num = num + 1
     i = 0
     for check in lst:
-        if check < math.sqrt(num):
+        if check <= math.sqrt(num):
             if num % check == 0:
                 prime = False
                 break
